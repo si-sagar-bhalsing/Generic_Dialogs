@@ -17,6 +17,7 @@ GenericAlertDialog(
     confirmText = "OK",
     dismissText = "Cancel"
 )
+```
 
 ### 2. CustomImageDialog
 This dialog supports images along with titles, descriptions, and action buttons, making it useful for promotional or update dialogs where visuals are required.
@@ -29,7 +30,7 @@ CustomImageDialog(
     onDismissRequest = { /* Handle dismiss */ },
     onConfirmClick = { /* Handle confirmation */ }
 )
-
+```
 ### 3. GenericBottomSheet
 A bottom sheet component that dynamically accepts any composable content, useful for displaying additional actions or contextual information.
 
@@ -41,12 +42,16 @@ GenericBottomSheet(
     },
     onDismissRequest = { /* Handle dismiss */ }
 )
+```
 
 ### 4. ConfirmationDialog
 A reusable confirmation dialog for "yes/no" decisions, such as delete confirmations or approvals.
+
+```kotlin
 ConfirmationDialog(
     title = "Delete Item",
     message = "Are you sure you want to delete this item?",
     onConfirmClick = { /* Handle confirmation */ },
     onDismissClick = { /* Handle dismiss */ }
 )
+```
